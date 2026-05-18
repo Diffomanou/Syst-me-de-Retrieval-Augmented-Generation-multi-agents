@@ -44,7 +44,7 @@ Question utilisateur
 |-----------|-------------|
 | Orchestration agents | LangGraph 0.2 |
 | LLM | GROQ_API |
-| Embeddings | OpenAI text-embedding-3-small |
+| Embeddings | llama3-70b-8192 |
 | Base vectorielle | ChromaDB |
 | Graphe de connaissances | Neo4j 5 |
 | API REST | FastAPI |
