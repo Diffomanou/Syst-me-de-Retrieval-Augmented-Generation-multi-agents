@@ -43,7 +43,7 @@ Question utilisateur
 | Composant | Technologie |
 |-----------|-------------|
 | Orchestration agents | LangGraph 0.2 |
-| LLM | OpenAI GPT-4o-mini |
+| LLM | GROQ_API |
 | Embeddings | OpenAI text-embedding-3-small |
 | Base vectorielle | ChromaDB |
 | Graphe de connaissances | Neo4j 5 |
