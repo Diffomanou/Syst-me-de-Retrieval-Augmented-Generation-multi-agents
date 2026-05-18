@@ -1,0 +1,11 @@
+# Environnement virtuel et Python
+.venv/
+__pycache__/
+*.pyc
+
+# Variables d'environnement 
+.env
+
+# Données et Index 
+data/
+chroma_db/
