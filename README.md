@@ -3,7 +3,7 @@
 Système de **Retrieval-Augmented Generation (RAG) multi-agents** construit avec **LangGraph**, **Neo4j**, **ChromaDB** et **FastAPI**.
 
 [![CI/CD](https://github.com/Diffomanou/multi-agent-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/Diffomanou/multi-agent-rag/actions)
-[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org)
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.2-orange)](https://github.com/langchain-ai/langgraph)
 
