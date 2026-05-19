@@ -77,7 +77,16 @@ Après ingestion, les entités et concepts extraits des documents sont reliés d
 
 ### Étape 3 — Requête et réponse sourcée
 
-Une question est posée via `POST /query`. Le pipeline multi-agents récupère le contexte pertinent (ChromaDB + Neo4j), raisonne et génère une réponse sourcée avec les documents d'origine.
+Une question est posée via `POST /query`. Le pipeline multi-agents récupère 
+le contexte pertinent (ChromaDB + Neo4j), raisonne et génère une réponse 
+**ancrée uniquement dans les documents ingérés**.
+
+Ce qui est remarquable dans cette capture : interrogé sur un détail technique 
+absent des sources, le système **refuse d'inventer**. Il répond explicitement 
+qu'il ne peut pas trouver l'information, cite le document consulté (Document 5),
+et recommande de vérifier d'autres sources — zéro hallucination, zéro 
+confabulation. La traçabilité est complète : chaque réponse expose ses 
+`sources` et son nombre d'`iterations`, ce qui permet d'auditer le raisonnement.
 
 ![Réponse sourcée du système multi-agents via Swagger UI](Docs/screenshots/git2.png)
 
