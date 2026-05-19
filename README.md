@@ -61,7 +61,7 @@ Le pipeline complet suit trois étapes : **ingestion → construction du graphe 
 
 Un fichier PDF est envoyé via `POST /ingest/file`. Le système le découpe en chunks vectorisés (ici 405 chunks) et les indexe dans ChromaDB et Neo4j.
 
-![Ingestion d'un fichier PDF via l'API FastAPI](docs/screenshots/git3.png)
+![Ingestion d'un fichier PDF via l'API FastAPI](Docs/screenshots/git3.png)
 
 ---
 
@@ -69,7 +69,7 @@ Un fichier PDF est envoyé via `POST /ingest/file`. Le système le découpe en c
 
 Après ingestion, les entités et concepts extraits des documents sont reliés dans un graphe Neo4j. Chaque nœud `Document` est connecté aux `Concept`s qu'il mentionne via des relations `MENTIONS`.
 
-![Graphe de connaissances Neo4j — 25 nœuds, 100 relations](docs/screenshots/git1.png)
+![Graphe de connaissances Neo4j — 25 nœuds, 100 relations](Docs/screenshots/git1.png)
 
 > **25 nœuds** (5 concepts, 20 documents) · **100 relations MENTIONS**
 
@@ -79,7 +79,7 @@ Après ingestion, les entités et concepts extraits des documents sont reliés d
 
 Une question est posée via `POST /query`. Le pipeline multi-agents récupère le contexte pertinent (ChromaDB + Neo4j), raisonne et génère une réponse sourcée avec les documents d'origine.
 
-![Réponse sourcée du système multi-agents via Swagger UI](docs/screenshots/git2.png)
+![Réponse sourcée du système multi-agents via Swagger UI](Docs/screenshots/git2.png)
 
 ---
 
